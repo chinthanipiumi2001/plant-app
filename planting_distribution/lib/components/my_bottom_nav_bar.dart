@@ -17,7 +17,14 @@ class MyBottomNavBar extends StatefulWidget{
         bottom: kDefaultPadding,
       ),
       height: 80,
-      
+      decoration: BoxDecoration(
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            offset: Offset(0,-10)
+          )
+        ]
+      ),
     )
   }
 }
