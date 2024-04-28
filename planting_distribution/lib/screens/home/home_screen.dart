@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:planting_distribution/components/my_bottom_nav_bar.dart';
+import 'package:planting_distribution/screens/details/components/body.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      body: Body(), // This part was missing
-      bottomNavigationBar: const MyBottomNavBar(),
+      body: Body(),
+      bottomNavigationBar: MyBottomNavBar(),
     );
   }
 
@@ -20,13 +21,5 @@ class HomeScreen extends StatelessWidget {
         onPressed: () {},
       ),
     );
-  }
-}
-
-// Define the Body widget
-class Body extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return const Center();
   }
 }
